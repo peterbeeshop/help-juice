@@ -1,15 +1,15 @@
 import React from 'react';
 import classes from './App.module.scss';
-import Content from './components/Content/Content';
-import Header from './components/header/Header';
-import SubHeader from './components/subHeader/SubHeader';
+import Content from './Content/Content';
+import Menu from './components/menu/Menu';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className={classes.container}>
-      <Header />
+      <Menu />
       <div className={classes.content}>
-        <SubHeader />
+        <Header />
         <Content/>
       </div>
     </div>

@@ -1,23 +1,31 @@
-import {FC} from 'react';
+import React from 'react'
 import classes from './Header.module.scss';
-import { HiOutlineChevronDoubleRight} from "react-icons/hi";
-import { FiBookOpen,FiUnlock } from "react-icons/fi";
-import { IoIosArrowDown } from "react-icons/io";
+import easterBunny from './assets/easter-bunny.png';
+import { AiOutlineClockCircle } from "react-icons/ai";
+import { FiArrowDownLeft, FiCloud } from "react-icons/fi";
+import { BsCheck2Circle } from "react-icons/bs";
+import { BiDotsVerticalRounded } from "react-icons/bi";
 
-const Header:FC = () => {
+
+function SubHeader() {
   return (
     <div className={classes.container}>
-      <div className={classes.headerLeft}>
-        <span className={classes.forwardIcon}><HiOutlineChevronDoubleRight /></span>
-        <span className={classes.bookIcon}><FiBookOpen/> Main / Getting Started / Front-end developer test proje...</span>
-      </div>
-      <div className={classes.headerRight}>
-        <span><FiUnlock /> Editing</span>
-        <span>|</span>
-        <span>Publish Space <IoIosArrowDown /></span>
-      </div>
+        <div className={classes.leftSideOfHeader}>
+            <b>P</b>
+            <span className={classes.clock}>
+              <AiOutlineClockCircle color='#595252bb'/>&nbsp;0min</span>
+            <img src={easterBunny} alt="easter-bunny" height={20} />
+            <span>
+              <FiArrowDownLeft />&nbsp;0
+            </span>
+        </div>
+        <div className={classes.rightSideOfHeader}>
+            <BsCheck2Circle color='#595252bb' />
+            <FiCloud color='green' />
+            <BiDotsVerticalRounded />
+        </div>
     </div>
   )
 }
 
-export default Header;
+export default SubHeader
