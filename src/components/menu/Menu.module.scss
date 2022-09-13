@@ -1,0 +1,47 @@
+.container {
+    margin-top: 16px;
+    margin-bottom: 30px;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.leftSideOfMenu {
+    display: flex;
+    align-items: center;
+
+    .forwardIcon {
+        margin-right: 30px;
+    }
+
+    .bookIcon {
+        margin-right: 8px;
+    }
+    b {
+        border-bottom: 1px solid grey;
+    }
+  
+}
+
+.rightSideOfMenu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .lockIcon {
+        padding-right: 8px;
+    }
+
+    b {
+        display: flex;
+        margin-left: 15px;
+        padding-left: 15px;
+        color: #3f4fc6;
+        border-left: 1px solid grey;
+    }
+
+    .downArrow {
+       padding-left: 8px;
+    }
+    
+}
