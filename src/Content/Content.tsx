@@ -48,7 +48,7 @@ const Content = () => {
 			<h1 className={classes.title}>Front-end developer test project</h1>
 			<p>
 				Your goal is to make a page that looks exactly like this one, and has the ability to create H1 text
-				simply by <br /> typing / then 1, then typing text, and hitting enter.
+				simply by <br /> typing / then 1, then typing text, and hitting Enter/RETURN.
 			</p>
 			<TextContent elements={elements} />
 
@@ -62,7 +62,7 @@ const Content = () => {
 					ref={ref}
 					className={`${classes.textInput} ${classes.headingTextInput}`}
 					onChange={(e: React.ChangeEvent<HTMLInputElement>) => setInputValue(e.target.value)}
-					onKeyPress={createH1Element}
+					onKeyDown={createH1Element}
 				/>
 			) : (
 				<input
@@ -72,7 +72,7 @@ const Content = () => {
 					ref={ref}
 					onChange={(e: React.ChangeEvent<HTMLInputElement>) => setInputValue(e.target.value)}
 					value={inputValue}
-          onKeyPress={createPTag}
+          onKeyDown={createPTag}
 				/>
 			)}
 			<DropDown

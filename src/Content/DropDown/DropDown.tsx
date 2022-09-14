@@ -8,7 +8,7 @@ type DropDownProps = {
 	headingInputReference: React.RefObject<HTMLInputElement>;
 };
 const DropDown = ({ textvalue, setIsHeading, setInputValue, headingInputReference }: DropDownProps) => {
-    
+
 	const handleHeading = () => {
 		setIsHeading(true);
 		setInputValue('');
