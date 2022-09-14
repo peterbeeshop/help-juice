@@ -29,14 +29,14 @@ const Content = () => {
 		}
 	};
 
-  function createPTag (event: React.KeyboardEvent<HTMLInputElement>) {
-    if (event.key === 'Enter') {
+	function createPTag(event: React.KeyboardEvent<HTMLInputElement>) {
+		if (event.key === 'Enter') {
 			const createdPElement = <p>{inputValue}</p>;
 			setElements((prevElements) => [...prevElements, createdPElement]);
 			setInputValue('');
 			event.preventDefault();
 		}
-  }
+	}
 
 	//this function here simply focuses the input field when we load our page in the browser.
 	useEffect(() => {
@@ -53,7 +53,7 @@ const Content = () => {
 			<TextContent elements={elements} />
 
 			{/* we want to conditionally render type of input field based on what type of element we want to create */}
-      {/* if isHeading is true we render an input field that creates H1 elements for us. If false, we render an input field that creates p tags */}
+			{/* if isHeading is true we render an input field that creates H1 elements for us. If false, we render an input field that creates p tags */}
 			{isHeading ? (
 				<input
 					type="text"
@@ -72,7 +72,7 @@ const Content = () => {
 					ref={ref}
 					onChange={(e: React.ChangeEvent<HTMLInputElement>) => setInputValue(e.target.value)}
 					value={inputValue}
-          onKeyDown={createPTag}
+					onKeyDown={createPTag}
 				/>
 			)}
 			<DropDown
