@@ -1,9 +1,19 @@
 .container {
-    padding-left: 10px;
-    padding-right: 20px;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 20px;
+
+	.questionMark {
+		background-color: #d3d3d348;
+		padding: 5px 5px;
+		position: absolute;
+		top: 92vh;
+		right: 2%;
+		cursor: pointer;
+	}
 }
 
 .content {
-    width: 50%;
-    margin: 0 auto;
+	width: 50%;
+	margin: 0 auto;
 }
