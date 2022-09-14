@@ -14,7 +14,7 @@ The techonologies used are react, css modules, sass and typescript.
 
 * Used sass for it provides a great way of debugging your css code, which regular css isn't able to do, plus other great advantages it comes with.
 
-Open [http://localhost:3000](http://localhost:3000) to view live project.
+Open [this link](https://helpjuice-frontendtest.netlify.app/) to view live project.
 ## How to install and run this project
 - Clone this github repository
 - Inside the root folder, hit `npm install` to install all dependencies
